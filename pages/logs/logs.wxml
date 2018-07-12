@@ -1,0 +1,13 @@
+<!--logs.wxml-->
+<wxs module="filters" src="logs.wxs"></wxs>
+<view class="container log-list">
+  <view class="addTips"> Add Tips </view>
+  <view class="section section_gap">
+    <radio-group class="group" bindchange="radioChange">
+      <view class="radio" wx:for="{{radioItems}}">
+        <radio name="{{item.name}}" checked="{{item.checked}}" value="{{filters.toFix(item.value * amount)}}" ></radio>{{filters.toFix(item.value * amount)+'('+item.name+')'}}
+      </view>
+    </radio-group>
+  </view>
+  <view class="total">{{"Total: " + total}}</view>
+</view>

@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}">
+      <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+  </radio-group>
+  <view class="input">
+    <form class="form" bindsubmit="bindFormSubmit">
+      <view class="input-Num">
+        <view>{{unit}}</view>
+        <input type="digit" placeholder="输入金额" name="inputValue"/>
+      </view>
+      <button class="confirm" form-type="submit"> 确认       </button>
+    </form>
+  </view>
+</view>

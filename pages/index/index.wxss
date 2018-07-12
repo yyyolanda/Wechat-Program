@@ -1,0 +1,39 @@
+/**index.wxss**/
+/*.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+*/
+ 
+.radio-group {
+  height: 200rpx;
+  margin-top: 20px;
+}
+
+.input {
+  height: 200rpx;
+  margin-top: 10px;
+}
+
+.input-Num {
+  width:100%;
+  margin-left: 50rpx;
+  display: flex;
+  white-space: pre-wrap;
+}
+
+.confirm {
+  margin-top: 50rpx;
+}
